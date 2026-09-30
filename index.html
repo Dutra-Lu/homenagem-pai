@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leonel — O homem da família</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="dots" id="dots"></nav>
+
+<audio id="trilha" src="trilha.mp3" loop preload="none"></audio>
+<button id="btn-som" class="botao-som" aria-pressed="false">🔈 ativar som</button>
+
+<main>
+
+  <section class="painel abertura-painel" id="s1">
+    <div class="conteudo abertura">
+      <span class="rotulo linha-anim" style="--ordem:0">Para o Leonel/Pai/Esposo/lixo/viking/aniversariante.</span>
+      <h1>
+        <span class="linha-wrap"><span class="linha-anim" style="--ordem:1">Esse é o</span></span>
+        <span class="linha-wrap"><span class="linha-anim em" style="--ordem:2">Leonel.</span></span>
+      </h1>
+      <p class="sub linha-anim" style="--ordem:3">Hoje é aniversário do Leonel então decidimos (filha amada (nao to falando da chica) e esposa) fazer um site pra mostrar TUDO do Leonel. E olha ele é bem interessante, por isso aqui vamos fazer um guia de coisas que o leonel faz que faz nós (a familia dele) amar ele muito. </p>
+      <div class="seta seta-nav" data-proximo="s2">desce aí</div>
+    </div>
+    <div class="foto-hero linha-anim" style="--ordem:4" id="foto-hero" data-legenda="Leonel" data-src="img/familia.jpeg"></div>
+  </section>
+
+  <section class="painel escuro" id="s2">
+    <div class="conteudo conteudo-largo">
+      <span class="rotulo">O que ele sabe fazer?</span>
+      <h2>Uma coisa que esse cara<br>sabe fazer: <em>tudo.</em></h2>
+
+      <div class="bloco-habilidades">
+        <p class="texto-longo texto-habilidades">
+          Acho que a piada interna da familia sempre foi que ele era o famoso medico, veterinario, eletricista, soldador, mecanico, politico, e no fim ele ESCOLHEU ser pedreiro. Mas olha, quando a gente fala tudo, é tudo mesmo, é incrivel o dom do Leonel de ver algo e imediatamente saber como ela funciona.
+          Então eu acho que esse é definitivamente uma das razões de amar o Leonel, ele sempre vai saber o que fazer e ele sempre vai ser o porto seguro pra onde se pode correr.
+        </p>
+
+        <div class="carrossel" id="carrossel-habilidades">
+          <div class="carrossel-slide ativo" data-legenda="Ele faz muito barulho concertando coisas" data-src="img/leo_magaiver.mp4" data-posicao="center 40%"></div>
+          <div class="carrossel-slide" data-legenda="Ele dança bastante com a terceira idade" data-src="img/leo_vo.mp4" data-posicao="center 8%"></div>
+          <div class="carrossel-slide" data-legenda="Ele cozinha varias coisas" data-src="img/leo_cozinha.mp4" data-posicao="center 30%"></div>
+          <div class="carrossel-slide" data-legenda="E ele bebe bastante tambem...." data-src="img/leo_bebo.jpeg" data-posicao="40%"></div>
+
+          <button class="carrossel-seta anterior" id="carrossel-anterior" aria-label="mídia anterior">‹</button>
+          <button class="carrossel-seta proxima" id="carrossel-proxima" aria-label="próxima mídia">›</button>
+
+          <p class="carrossel-legenda" id="carrossel-legenda">Ele faz muito barulho concertando coisas</p>
+        </div>
+      </div>
+
+      <div class="seta seta-nav" data-proximo="s3">continua</div>
+    </div>
+  </section>
+
+  <section class="painel" id="s3" data-fundo="img/leo_i_sinuca.jpeg">
+    <div class="conteudo">
+      <span class="rotulo">Funciona assim: aperta e sofre</span>
+      <h2>Coisas que o Leonel faz<br>que irritam muito a família<br><em>(só com muito amor pra aturar).</em></h2>
+
+      <div class="irritacoes" id="irritacoes">
+        <p class="irritacao-item">N1 — Ele come comidas que ele NÃO GOSTA só pra falar mal delas mais de uma vez</p>
+        <p class="irritacao-item">N2 — Mania de contornar discussões pra ele vencer sempre (obs: TEIMOSO)</p>
+        <p class="irritacao-item">N3 — Não pode encostar na gata dele que ele ja fica com ciúmes</p>
+        <p class="irritacao-item">N4 — A mania de se levantar 21651321 a noite ao invez de só IR DORMIR </p>
+      </div>
+
+      <div class="irritacao-cartao" id="irritacao-cartao">
+        <span class="irritacao-numero" id="irritacao-numero">01</span>
+        <p class="irritacao-texto" id="irritacao-texto"></p>
+      </div>
+
+      <button class="botao-irritacao" id="botao-irritacao">
+        <span id="botao-irritacao-texto">Mostra mais uma ae </span>
+      </button>
+
+      <div class="seta seta-nav" data-proximo="s4">continua</div>
+    </div>
+  </section>
+
+  <section class="painel escuro" id="s4">
+    <div class="conteudo">
+      <span class="rotulo">E o que o Leonel gosta além de beber? </span>
+      <h2 class="titulo-unico">Coisas que ele ama muito.</h2>
+      <div class="galeria" id="grade-amores">
+        <div class="foto-slot" data-legenda="Euzinha(eu espero ne)" data-src="img/leu_i_eu.jpeg" data-posicao="center 10%"></div>
+        <div class="foto-slot" data-legenda="A chica" data-src="img/chica.jpeg"></div>
+        <div class="foto-slot" data-legenda="Mamis(papo de outras vidas)" data-src="img/mamis.jpeg"></div>
+        <div class="foto-slot" data-legenda="Dormir MUITO por periodos nada curtos" data-src="img/leo_dormindo.jpeg"></div>
+        <div class="foto-slot" data-legenda="Fazer cara de coitado" data-src="img/leo_cara_coitado.jpeg"></div>
+        <div class="foto-slot" data-legenda="Desmontar moto e carro o tempo TODO " data-src="img/carro_moto.jpeg"></div>
+      </div>
+      <p class="rodape-secao">Essa é uma parte das coisas que ele ama e ele pode ter certeza que isso não é nem a metade das coisas que amamos nele</p>
+
+      <div class="seta seta-nav" data-proximo="s5">continua</div>
+    </div>
+  </section>
+
+  <section class="painel" id="s5">
+    <div class="conteudo">
+      <span class="rotulo">Uma coisa que ele fala bastante é que ta louco tambem (nisso a gente concorda) </span>
+      <blockquote class="citacao">
+        "E DEPOIS EU QUE SOU O LOUCO - BY LEONEL NA SINDROME DA COITADOLANDIA "
+      </blockquote>
+      <p class="texto-longo">
+       Ele é dramatico mas isso é de familía, o seu leonel é igualzinho a ele, e essa é outra coisa que ele ama também. 
+      </p>
+
+      <div class="seta seta-nav" data-proximo="s6">continua</div>
+    </div>
+  </section>
+
+  <section class="painel escuro" id="s6">
+    <div class="conteudo">
+      <span class="rotulo">LEONEL SENDO UMA PRAGA</span>
+      <h2>Uma coisa que a gente ama muito no leonel é que ele sempre faz a gente rir </h2>
+      <p class="texto-longo">Da um play ai nele sendo um palhaço</p>
+
+      <button class="botao-assistir" id="btn-assistir" data-src="img/video_leo.mp4">
+        <svg class="icone-play" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+          <path d="M8 5v14l11-7z"></path>
+        </svg>
+        assistir
+      </button>
+
+      <div class="seta seta-nav" data-proximo="s7">continua</div>
+    </div>
+  </section>
+
+  <section class="painel final" id="s7" data-fundo="img/familia.jpeg">
+    <div class="conteudo abertura">
+      <span class="rotulo">Para fechar com viadagem</span>
+      <h2>Obrigado por ser<br>quem é.</h2>
+      <p class="texto-longo">
+        Obrigada por aparecer, como um furacão de carinho em duas vidas que precisavam disso e por não se perder nem ficar "louco kkk" acho que não tem pessoas mais gratas que aquelas que convivem com você. 
+        Esse é meu presente. Feliz aniversario, queriamos fazer um compilado de coisas que lembram você para mostrar que não é apenas mais um ano de vida, e sim mais um ano alegrando nossas vidas. 
+        Muita saúde, muito amor (bebida né) e aproveita seu dia por que tenha certeza que nós estamos comemorando por ter você em nossas vidas com ele.
+      </p>
+      <p class="assinatura">com amor, sua família</p>
+      <button class="botao-final" id="botao-final">ultimo passo aqui</button>
+    </div>
+  </section>
+
+</main>
+
+<section class="festa" id="s8">
+  <button class="modal-fechar" id="festa-fechar" aria-label="fechar">✕</button>
+
+  <div class="festa-fundo">
+    <img class="festa-foto f1" src="img/leo_dormindo.jpeg" alt="">
+    <img class="festa-foto f2" src="img/leo_peruca.jpeg" alt="">
+    <img class="festa-foto f3" src="img/leo_sentado.jpeg" alt="">
+  </div>
+
+  <div class="confete" id="confete" aria-hidden="true"></div>
+
+  <div class="conteudo conteudo-festa">
+    <h2 class="festa-titulo">
+      <span class="festa-linha l1">Acabou já, fera.</span>
+      <span class="festa-linha l2">Já tá na hora da festa, né?</span>
+      <span class="festa-linha l3">SEM VIADAGEM.</span>
+    </h2>
+    <p class="festa-brinde">🍺 🎉 🍻</p>
+  </div>
+</section>
+
+<div class="modal-video" id="modal-video">
+  <button class="modal-fechar" id="modal-fechar" aria-label="fechar vídeo">✕</button>
+  <video id="modal-video-player" controls playsinline></video>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
